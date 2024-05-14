@@ -101,6 +101,26 @@ std::string Graph::RandomBridgeWords(int id1, int id2) {
 	return tmp[rand() % cnt + 1] + " ";
 }
 
+void showDirectedGraph(Graph& G, const std::string& path) {
+	std::ofstream out("tmp.dot", std::ios::out);
+	out << "digraph G {" << std::endl;
+	int v = G.get_v();
+	for (int i=0;i<v;i++) {
+		for (int j=0;j<v;j++) {
+			if (G.Edge[i][j]) {
+				out << "\t" << G.Vex[i] << " -> " << G.Vex[j] 
+					<< " [label=" << G.Edge[i][j] << "];" << std::endl;
+			}
+		}
+	}
+	out << "}" <<std::endl;
+	out.close();
+	std::string tmp;
+	tmp = "dot -Tpng tmp.dot -o " + path;
+	system(tmp.c_str());
+	std::remove("tmp.dot");
+}
+
 std::string queryBridgeWords(Graph& G, const std::string& word1, const std::string& word2) {
 	int id1 = G.FindNum(word1);
 	int id2 = G.FindNum(word2);
