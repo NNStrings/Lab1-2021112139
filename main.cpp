@@ -3,6 +3,7 @@
 using namespace std;
 int main(){
 	
+	Graph G("./test.txt");
 	
 	return 0;
 }

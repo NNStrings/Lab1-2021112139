@@ -1,24 +1,53 @@
 #ifndef __GRAPH__
 #define __GRAPH__
 
-#include <string>
+#include <bits/stdc++.h>
+
+#define MaxNum 100
 
 using namespace std;
 
-#define MaxNum 100
 class Graph {
 private:
-	static void textPreprocess(string& str);
+	static void textPreprocess(string& str) {
+		bool flag = false;
+		for (char& c : str) {
+			if (isalpha(c)) {
+				c |= 0x20;
+				flag = false;
+			}
+			else {
+				if (!flag) {
+					c = ' ';
+					flag = true;
+				}
+				else {
+					c = 0;
+				}
+			}
+		}
+		for (char& c : str) {
+			if (isalpha(c)) break;
+			c = 0;
+		}
+	}
 	int v, e;
-	string path;
+	const string path;
+	map<string,int> mp;
 public:
-	Graph(string& p);
+	Graph(const string& p);
 	using vertex_t = string;
 	using edge_t = int;
 	vertex_t Vex[MaxNum];
 	edge_t Edge[MaxNum][MaxNum];
+	int get_v(){
+		return v;
+	}
+	int get_e(){
+		return e;
+	}
 	int FindNum(const string& word){
-		for(int i=1;i<=v;i++){
+		for(int i=0;i<v;i++){
 			if(word==Vex[i])return i;
 		}
 		return -1;
@@ -54,13 +83,41 @@ public:
 	}
 };
 
+Graph::Graph(const string& p): path(p) {
+	memset(Vex, 0, sizeof(Vex));
+	memset(Edge, 0, sizeof(Edge));
+	ifstream file(path);
+    if (!file.is_open()) {
+        cerr << "Error" << endl;
+        exit(0);
+    }
+    stringstream buffer;
+    buffer << file.rdbuf();
+    string content = buffer.str();
+	textPreprocess(content);
+	buffer << content;
+	string tmp;
+	vector<string> vec;
+	set<string> Set;
+	while (buffer>>tmp) {
+		vec.push_back(tmp);
+		Set.insert(tmp);
+	}
+	for (auto& item : Set) {
+		mp[item] = v;
+		Vex[v++] = item;
+	}
+	e=vec.size() - 1;
+	for (int i=0;i<e;i++) {
+		Edge[mp[vec[i]]][mp[vec[i+1]]]++;
+	}
+}
+
 void showDirectedGraph(Graph& G, const string& path = "./graph.png");
 string queryBridgeWords(Graph& G, const string& word1, const string& word2);
 string generateNewText(Graph& G, const string& input);
-string calcShortestPath(string word1, string word2);
-string calcShortestPath(string word);
-string randomWalk();
-
-#undef MaxNum
+string calcShortestPath(Graph& G, string word1, string word2);
+string calcShortestPath(Graph& G, string word);
+string randomWalk(Graph& G);
 
 #endif
