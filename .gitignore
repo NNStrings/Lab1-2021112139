@@ -3,5 +3,6 @@
 *.exe
 *.h.gch
 *.o
-test
 test.*
+test
+main
