@@ -2,3 +2,6 @@
 
 *.exe
 *.h.gch
+*.o
+test
+test.*
