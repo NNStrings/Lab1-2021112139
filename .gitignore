@@ -1,13 +1,23 @@
-################ folder ################
+################ config ################
 
 .vscode
 
-################# file #################
+################# google test include #################
+
+include
+
+############ google test lib ############
+
+lib
+
+############ executable & object file ############
 
 *.exe
 *.h.gch
 *.o
-*.png
-test.*
-test
+test_main
 main
+
+############ else ############
+
+*.png
