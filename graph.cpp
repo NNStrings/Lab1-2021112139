@@ -98,6 +98,7 @@ std::string Graph::RandomBridgeWords(int id1, int id2) {
 	for (int i = 1; i <= v; i++)if (Edge[id1][i] && Edge[i][id2]) {
 		tmp[++cnt] = Vex[i];
 	}
+	if(!cnt)return "";
 	return tmp[rand() % cnt + 1] + " ";
 }
 
@@ -152,7 +153,8 @@ std::string generateNewText(Graph& G, const std::string& input) {
 		}
 		else now = now + input[i];
 	}
-	res = res + last;
+	res = res + last + " " + G.RandomBridgeWords(G.FindNum(last), G.FindNum(now));
+	res = res + now;
 	return res;
 }
 
@@ -190,7 +192,7 @@ std::string calcShortestPath(Graph& G, std::string& word1, std::string& word2) {
 	int now = id1;
 	while (now != id2) {
 		now = last[now];
-		res = res + "->" + G.Vex[id2];
+		res = res + "->" + G.Vex[now];
 	}
 	return res;
 }
@@ -212,7 +214,7 @@ std::string randomWalk(Graph& G) {
 			num[++cnt] = i;
 		}
 		if (!cnt)break;
-		int x = num[rand() % cnt];
+		int x = num[rand() % cnt+1];
 		res = res + " " + G.Vex[x];
 		if (mark[now][x])break;
 		mark[now][x] = 1;

@@ -5,16 +5,16 @@ int main(int argc, char** argv){
 	Graph G("./test.txt");
 	std::cout << G.get_v() << std::endl << G.get_e() << std::endl;
 	/*
-	 *  help			// °ïÖúÐÅÏ¢ 
-	 *  v				// ·µ»ØÍ¼½ÚµãÊý 
-	 *  e				// ·µ»ØÍ¼±ßÊý 
-	 *  showg			// Õ¹Ê¾Í¼½á¹¹ 
-	 *  bw w1 w2		// ²éÑ¯ÇÅ½Ó´Ê
-	 *  bnw input		// ¸ù¾Ýbridge wordÉú³ÉÐÂÎÄ±¾
-	 *  shortp1 w		// ¼ÆËãÁ½¸öµ¥´ÊÖ®¼äµÄ×î¶ÌÂ·¾¶
-	 *  shortp2 w1 w2	// ¼ÆËãÁ½¸öµ¥´ÊÖ®¼äµÄ×î¶ÌÂ·¾¶
-	 *  rwalk			// Ëæ»úÓÎ×ß
-	 *  exit			// ÍË³ö 
+	 *  help			// å¸®åŠ©ä¿¡æ¯ 
+	 *  v				// è¿”å›žå›¾èŠ‚ç‚¹æ•° 
+	 *  e				// è¿”å›žå›¾è¾¹æ•° 
+	 *  showg			// å±•ç¤ºå›¾ç»“æž„ 
+	 *  bw w1 w2		// æŸ¥è¯¢æ¡¥æŽ¥è¯
+	 *  bnw input		// æ ¹æ®bridge wordç”Ÿæˆæ–°æ–‡æœ¬
+	 *  shortp1 w		// è®¡ç®—ä¸¤ä¸ªå•è¯ä¹‹é—´çš„æœ€çŸ­è·¯å¾„
+	 *  shortp2 w1 w2	// è®¡ç®—ä¸¤ä¸ªå•è¯ä¹‹é—´çš„æœ€çŸ­è·¯å¾„
+	 *  rwalk			// éšæœºæ¸¸èµ°
+	 *  exit			// é€€å‡º 
 	 */ 
 	std::string cmd; 
 	while (1) {
@@ -43,15 +43,15 @@ int main(int argc, char** argv){
 			std::cout<<randomWalk(G)<<std::endl;
 		}
 		else if (cmd == "help") {
-			printf("*  v - ·µ»ØÍ¼½ÚµãÊý\n\
-			e - ·µ»ØÍ¼±ßÊý\n\
-			showg - Õ¹Ê¾Í¼½á¹¹\n\
-			bw w1 w2 - ²éÑ¯ÇÅ½Ó´Ê\n\
-	 		bnw input - ¸ù¾Ýbridge wordÉú³ÉÐÂÎÄ±¾\n\
-	 		shortp1 w - ¼ÆËãÁ½¸öµ¥´ÊÖ®¼äµÄ×î¶ÌÂ·¾¶\n\
-	 		shortp2 w1 w2 - ¼ÆËãÁ½¸öµ¥´ÊÖ®¼äµÄ×î¶ÌÂ·¾¶\n\
-	 		rwalk - Ëæ»úÓÎ×ß\n\
-	 		exit - ÍË³ö\n");
+			printf("*  v - è¿”å›žå›¾èŠ‚ç‚¹æ•°\n\
+			e - è¿”å›žå›¾è¾¹æ•°\n\
+			showg - å±•ç¤ºå›¾ç»“æž„\n\
+			bw w1 w2 - æŸ¥è¯¢æ¡¥æŽ¥è¯\n\
+	 		bnw input - æ ¹æ®bridge wordç”Ÿæˆæ–°æ–‡æœ¬\n\
+	 		shortp1 w - è®¡ç®—ä¸¤ä¸ªå•è¯ä¹‹é—´çš„æœ€çŸ­è·¯å¾„\n\
+	 		shortp2 w1 w2 - è®¡ç®—ä¸¤ä¸ªå•è¯ä¹‹é—´çš„æœ€çŸ­è·¯å¾„\n\
+	 		rwalk - éšæœºæ¸¸èµ°\n\
+	 		exit - é€€å‡º\n");
 		}
 		else {
 			printf("Not found cmd!!!\n");
