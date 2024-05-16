@@ -43,15 +43,17 @@ int main(int argc, char** argv){
 			std::cout<<randomWalk(G)<<std::endl;
 		}
 		else if (cmd == "help") {
-			printf("*  v - 返回图节点数\n\
-			e - 返回图边数\n\
-			showg - 展示图结构\n\
-			bw w1 w2 - 查询桥接词\n\
-	 		bnw input - 根据bridge word生成新文本\n\
-	 		shortp1 w - 计算两个单词之间的最短路径\n\
-	 		shortp2 w1 w2 - 计算两个单词之间的最短路径\n\
-	 		rwalk - 随机游走\n\
-	 		exit - 退出\n");
+			printf("************** Menu **************\n");
+			printf("v - 返回图节点数\
+			\ne - 返回图边数\
+			\nshowg - 展示图结构\
+			\nbw w1 w2 - 查询桥接词\
+	 		\nbnw input - 根据bridge word生成新文本\
+	 		\nshortp1 w - 计算两个单词之间的最短路径\
+	 		\nshortp2 w1 w2 - 计算两个单词之间的最短路径\
+	 		\nrwalk - 随机游走\
+	 		\nexit - 退出\n");
+			printf("**********************************\n");
 		}
 		else {
 			printf("Not found cmd!!!\n");
