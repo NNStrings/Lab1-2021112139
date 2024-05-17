@@ -3,7 +3,6 @@
 
 int main(int argc, char** argv){
 	Graph G("./test.txt");
-	std::cout << G.get_v() << std::endl << G.get_e() << std::endl;
 	/*
 	 *  help			// 帮助信息 
 	 *  v				// 返回图节点数 
@@ -18,6 +17,7 @@ int main(int argc, char** argv){
 	 */ 
 	std::string cmd; 
 	while (1) {
+		std::cout << ">>> ";
 		std::cin>>cmd; 
 		if (cmd == "exit") break;
 		else if (cmd == "v") std::cout<<G.get_v()<<std::endl;
