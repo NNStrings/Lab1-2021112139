@@ -2,7 +2,12 @@
 #include "graph.h"
 
 int main(int argc, char** argv){
-	Graph G("./test.txt");
+	if (argc != 2) {
+		perror("parameters error\n");
+		exit(1);
+	}
+	srand(time(NULL));
+	Graph G(argv[1]);
 	/*
 	 *  help			// 帮助信息 
 	 *  v				// 返回图节点数 
@@ -28,7 +33,14 @@ int main(int argc, char** argv){
 			std::cin>>s1>>s2;
 			std::cout<<queryBridgeWords(G,s1,s2)<<std::endl;
 		}
-		else if (cmd == "bnw") std::cout<<G.get_e()<<std::endl;
+		else if (cmd == "bnw") {
+			std::string s;
+			char str[1000];
+			getchar();
+			fgets(str, 1000, stdin);
+			s = str;
+			std::cout<<generateNewText(G, s);
+		}
 		else if (cmd == "shortp1") {
 			std::string s;
 			std::cin>>s;
@@ -56,7 +68,7 @@ int main(int argc, char** argv){
 			printf("**********************************\n");
 		}
 		else {
-			printf("Not found cmd!!!\n");
+			printf("Not found cmd \"%s\"!!!\n", cmd.c_str());
 		}
 	}
 	return 0;
