@@ -2,22 +2,27 @@
 #include "graph.h"
 
 int main(int argc, char** argv){
-	Graph G("./test.txt");
-	std::cout << G.get_v() << std::endl << G.get_e() << std::endl;
+	if (argc != 2) {
+		perror("parameters error\n");
+		exit(1);
+	}
+	srand(time(NULL));
+	Graph G(argv[1]);
 	/*
-	 *  help			// °ïÖúÐÅÏ¢ 
-	 *  v				// ·µ»ØÍ¼½ÚµãÊý 
-	 *  e				// ·µ»ØÍ¼±ßÊý 
-	 *  showg			// Õ¹Ê¾Í¼½á¹¹ 
-	 *  bw w1 w2		// ²éÑ¯ÇÅ½Ó´Ê
-	 *  bnw input		// ¸ù¾Ýbridge wordÉú³ÉÐÂÎÄ±¾
-	 *  shortp1 w		// ¼ÆËãÁ½¸öµ¥´ÊÖ®¼äµÄ×î¶ÌÂ·¾¶
-	 *  shortp2 w1 w2	// ¼ÆËãÁ½¸öµ¥´ÊÖ®¼äµÄ×î¶ÌÂ·¾¶
-	 *  rwalk			// Ëæ»úÓÎ×ß
-	 *  exit			// ÍË³ö 
+	 *  help			// å¸®åŠ©ä¿¡æ¯ 
+	 *  v				// è¿”å›žå›¾èŠ‚ç‚¹æ•° 
+	 *  e				// è¿”å›žå›¾è¾¹æ•° 
+	 *  showg			// å±•ç¤ºå›¾ç»“æž„ 
+	 *  bw w1 w2		// æŸ¥è¯¢æ¡¥æŽ¥è¯
+	 *  bnw input		// æ ¹æ®bridge wordç”Ÿæˆæ–°æ–‡æœ¬
+	 *  shortp1 w		// è®¡ç®—ä¸¤ä¸ªå•è¯ä¹‹é—´çš„æœ€çŸ­è·¯å¾„
+	 *  shortp2 w1 w2	// è®¡ç®—ä¸¤ä¸ªå•è¯ä¹‹é—´çš„æœ€çŸ­è·¯å¾„
+	 *  rwalk			// éšæœºæ¸¸èµ°
+	 *  exit			// é€€å‡º 
 	 */ 
 	std::string cmd; 
 	while (1) {
+		std::cout << ">>> ";
 		std::cin>>cmd; 
 		if (cmd == "exit") break;
 		else if (cmd == "v") std::cout<<G.get_v()<<std::endl;
@@ -28,7 +33,14 @@ int main(int argc, char** argv){
 			std::cin>>s1>>s2;
 			std::cout<<queryBridgeWords(G,s1,s2)<<std::endl;
 		}
-		else if (cmd == "bnw") std::cout<<G.get_e()<<std::endl;
+		else if (cmd == "bnw") {
+			std::string s;
+			char str[1000];
+			getchar();
+			fgets(str, 1000, stdin);
+			s = str;
+			std::cout<<generateNewText(G, s);
+		}
 		else if (cmd == "shortp1") {
 			std::string s;
 			std::cin>>s;
@@ -43,18 +55,20 @@ int main(int argc, char** argv){
 			std::cout<<randomWalk(G)<<std::endl;
 		}
 		else if (cmd == "help") {
-			printf("*  v - ·µ»ØÍ¼½ÚµãÊý\n\
-			e - ·µ»ØÍ¼±ßÊý\n\
-			showg - Õ¹Ê¾Í¼½á¹¹\n\
-			bw w1 w2 - ²éÑ¯ÇÅ½Ó´Ê\n\
-	 		bnw input - ¸ù¾Ýbridge wordÉú³ÉÐÂÎÄ±¾\n\
-	 		shortp1 w - ¼ÆËãÁ½¸öµ¥´ÊÖ®¼äµÄ×î¶ÌÂ·¾¶\n\
-	 		shortp2 w1 w2 - ¼ÆËãÁ½¸öµ¥´ÊÖ®¼äµÄ×î¶ÌÂ·¾¶\n\
-	 		rwalk - Ëæ»úÓÎ×ß\n\
-	 		exit - ÍË³ö\n");
+			printf("************** Menu **************\n");
+			printf("v - è¿”å›žå›¾èŠ‚ç‚¹æ•°\
+			\ne - è¿”å›žå›¾è¾¹æ•°\
+			\nshowg - å±•ç¤ºå›¾ç»“æž„\
+			\nbw w1 w2 - æŸ¥è¯¢æ¡¥æŽ¥è¯\
+	 		\nbnw input - æ ¹æ®bridge wordç”Ÿæˆæ–°æ–‡æœ¬\
+	 		\nshortp1 w - è®¡ç®—ä¸¤ä¸ªå•è¯ä¹‹é—´çš„æœ€çŸ­è·¯å¾„\
+	 		\nshortp2 w1 w2 - è®¡ç®—ä¸¤ä¸ªå•è¯ä¹‹é—´çš„æœ€çŸ­è·¯å¾„\
+	 		\nrwalk - éšæœºæ¸¸èµ°\
+	 		\nexit - é€€å‡º\n");
+			printf("**********************************\n");
 		}
 		else {
-			printf("Not found cmd!!!\n");
+			printf("Not found cmd \"%s\"!!!\n", cmd.c_str());
 		}
 	}
 	return 0;

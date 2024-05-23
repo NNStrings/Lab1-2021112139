@@ -28,7 +28,7 @@ extern void showDirectedGraph(Graph&, const std::string&);
 extern std::string queryBridgeWords(Graph&, const std::string&, const std::string&);
 extern std::string generateNewText(Graph&, const std::string&);
 extern std::string calcShortestPath(Graph&, std::string&, std::string&);
-extern std::string calcShortestPath(Graph& G, std::string& word);
+extern std::string calcShortestPath(Graph&, std::string&);
 extern std::string randomWalk(Graph& G);
 
 #endif
