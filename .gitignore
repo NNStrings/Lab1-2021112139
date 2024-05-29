@@ -15,9 +15,11 @@ lib
 *.exe
 *.h.gch
 *.o
+*.a
 test_main
 main
 
 ############ else ############
 
 *.png
+*.jpg
