@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 Athens, Greece. It was constructed largely of repurposed 
+=======
+Athens, Greece. It was constructed largely of repurposed 
+the 4th-century BCE Choragic 
+Monument of Nikias and integrated into
+>>>>>>> C4

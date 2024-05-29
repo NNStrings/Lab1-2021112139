@@ -1,8 +1,109 @@
+commit b3fd24410c2a5be7c9a6ece8a89281b85c412b84
+Author: nnstrings <nnstrings99@gmail.com>
+Date:   Wed May 29 22:01:18 2024 +0800
+
+    commit test file
+
+commit 1dd45eb652f24ddc7cd057fa416e35d56ee96965
+Author: nnstrings <nnstrings99@gmail.com>
+Date:   Wed May 29 21:56:34 2024 +0800
+
+    commit test file
+
+commit c811882e6846ac3963e869cd2bcdde83e202749b
+Author: nnstrings <nnstrings99@gmail.com>
+Date:   Wed May 29 21:22:40 2024 +0800
+
+    updata .gitignore
+
+commit 4a58a0fb24878f7d0f6cf72232dd741a5e92905b
+Merge: 43601a8 e470d9b
+Author: nnstrings <nnstrings99@gmail.com>
+Date:   Wed May 29 21:10:07 2024 +0800
+
+    Merge branch 'main' of https://github.com/NNStrings/Lab1-2021112139 into main
+
+commit 43601a82e8a7cc29d93242750837839ad7d9546a
+Author: nnstrings <nnstrings99@gmail.com>
+Date:   Wed May 30 21:09:05 2024 +0800
+
+    commit test file
+
+commit 06b32750b43db6399900d93bcc38e85b5eee6b13
+Author: nnstrings <nnstrings99@gmail.com>
+Date:   Wed May 29 21:04:12 2024 +0800
+
+    commit test file
+
+commit aebe20f3fd5b74cabe158876959ceced53e71892
+Merge: e21010d a1322bb
+Author: nnstrings <nnstrings99@gmail.com>
+Date:   Wed May 29 19:48:59 2024 +0800
+
+    Merge branch 'nns' of https://github.com/NNStrings/Lab1-2021112139 into main
+
+commit e470d9b6ef1ab80a6d214effc7516842ee5a55ef
+Merge: e21010d a1322bb
+Author: NNStrings <97866513+NNStrings@users.noreply.github.com>
+Date:   Wed May 29 19:45:31 2024 +0800
+
+    Merge pull request #12 from NNStrings/nns
+    
+    commit git log
+
+commit a1322bb4aafe42b1e47a8d175de474422469d321
+Author: nnstrings <nnstrings99@gmail.com>
+Date:   Wed May 29 19:44:15 2024 +0800
+
+    commit git log
+
+commit e21010da99a15bf66c6aaff1071401ff14c7a5aa
+Merge: 0220f25 8ecaddf
+Author: NNStrings <97866513+NNStrings@users.noreply.github.com>
+Date:   Thu May 23 11:23:27 2024 +0800
+
+    Merge pull request #11 from NNStrings/bigshark
+    
+    Bigshark
+
+commit 8ecaddf5e61fa3e881b065d9f2cdde4d34092df2
+Merge: 50212d7 494cca6
+Author: NNStrings <97866513+NNStrings@users.noreply.github.com>
+Date:   Thu May 23 11:22:36 2024 +0800
+
+    Merge pull request #10 from bigsharkym/main
+    
+    updata README
+
+commit 494cca691b94b6a729a05d38b434c1485dcfe596
+Author: bigshark <3366416284@qq.com>
+Date:   Thu May 23 09:40:33 2024 +0800
+
+    updata README
+
+commit 0220f25a52319f78bb82cacb0a05715d4c66fdb0
+Merge: b89a9d4 fa12067
+Author: NNStrings <97866513+NNStrings@users.noreply.github.com>
+Date:   Thu May 23 09:11:26 2024 +0800
+
+    Merge pull request #8 from NNStrings/nns
+    
+    updata code
+
 commit fa1206707d0fdf3f5bb58266ee463d57a2e76ebf
 Author: nnstrings <nnstrings99@gmail.com>
 Date:   Thu May 23 09:09:08 2024 +0800
 
     updata code
+
+commit b89a9d49b9f32d16c9a97542ecca6b22d314892c
+Merge: 96dafc4 447ad72
+Author: NNStrings <97866513+NNStrings@users.noreply.github.com>
+Date:   Fri May 17 15:57:27 2024 +0800
+
+    Merge pull request #7 from NNStrings/nns
+    
+    updata
 
 commit 447ad7244ea35c614a6e31dd482e042fa265017f
 Author: nnstrings <nnstrings99@gmail.com>
@@ -10,11 +111,29 @@ Date:   Fri May 17 15:55:17 2024 +0800
 
     updata
 
+commit 96dafc482eaf1cb4ec2a838a9015c13c0a9396b6
+Merge: 9ff08ec 5911bbf
+Author: NNStrings <97866513+NNStrings@users.noreply.github.com>
+Date:   Thu May 16 11:32:49 2024 +0800
+
+    Merge pull request #6 from NNStrings/nns
+    
+    updata main.cpp
+
 commit 5911bbf975bc483152e250197ffa23186a058773
 Author: nnstrings <nnstrings99@gmail.com>
 Date:   Thu May 16 11:30:44 2024 +0800
 
     updata main.cpp
+
+commit 9ff08ec4ca722c7b53bb8ae7dbc73bf10ceb87ed
+Merge: c6d3b8a e4f8b28
+Author: NNStrings <97866513+NNStrings@users.noreply.github.com>
+Date:   Thu May 16 11:21:32 2024 +0800
+
+    Merge pull request #5 from NNStrings/nns
+    
+    updata code
 
 commit e4f8b28dc5a49d3a69b50c08a40b2a5e628b34de
 Author: nnstrings <nnstrings99@gmail.com>
