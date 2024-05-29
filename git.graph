@@ -1,0 +1,70 @@
+* edbe38e (HEAD -> 2021112139, origin/2021112139, B1) updata test file
+*   5026a85 Merge branch 'C4' into B1
+|\  
+| * 67b4713 updata test file
+| * 1ff6690 updata test file
+* | 41d614e updata test file
+|/  
+* b3fd244 (origin/main, origin/HEAD, main, B2) commit test file
+* 1dd45eb commit test file
+* c811882 updata .gitignore
+*   4a58a0f Merge branch 'main' of https://github.com/NNStrings/Lab1-2021112139 into main
+|\  
+| *   e470d9b Merge pull request #12 from NNStrings/nns
+| |\  
+* | | 43601a8 commit test file
+* | | 06b3275 commit test file
+* | |   aebe20f (origin/nns, nns) Merge branch 'nns' of https://github.com/NNStrings/Lab1-2021112139 into main
+|\ \ \  
+| |/ /  
+|/| /   
+| |/    
+| * a1322bb commit git log
+* |   e21010d Merge pull request #11 from NNStrings/bigshark
+|\ \  
+| * \   8ecaddf (origin/bigshark) Merge pull request #10 from bigsharkym/main
+| |\ \  
+| | * | 494cca6 updata README
+| |/ /  
+|/| |   
+* | |   0220f25 Merge pull request #8 from NNStrings/nns
+|\ \ \  
+| | |/  
+| |/|   
+| * | fa12067 updata code
+* | | b89a9d4 Merge pull request #7 from NNStrings/nns
+|\| | 
+| * | 447ad72 updata
+* | | 96dafc4 Merge pull request #6 from NNStrings/nns
+|\| | 
+| * | 5911bbf updata main.cpp
+* | | 9ff08ec Merge pull request #5 from NNStrings/nns
+|\| | 
+| * | e4f8b28 updata code
+|/ /  
+* | c6d3b8a Merge pull request #4 from NNStrings/bigshark
+|\| 
+| * 50212d7 Merge pull request #3 from bigsharkym/jyy
+|/| 
+| * bc57798 updata main.cpp
+|/  
+* 0fa367f updata README
+* dfb9dc5 commit test_main.cpp
+* 09dd5f1 updata main.cpp
+* 9322657 updata Makefile
+* c514245 test file
+* 566528d updata .gitignore
+* e818ff9 updata code
+* c9660b0 updata .gitignore
+* 5c0a390 updata code
+* b137b6f updata .gitignore
+* 9c67025 updata code
+* e2ef816 add Makefile
+* 1437057 updata .gitignore
+*   0202afe Merge pull request #1 from bigsharkym/main
+|\  
+| * 0f07e02 commit code
+| * bff4657 add .gitignore
+|/  
+* 6585666 updata graph.h
+* 7cdd4cc Initial commit
