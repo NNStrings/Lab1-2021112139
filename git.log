@@ -1,0 +1,158 @@
+commit fa1206707d0fdf3f5bb58266ee463d57a2e76ebf
+Author: nnstrings <nnstrings99@gmail.com>
+Date:   Thu May 23 09:09:08 2024 +0800
+
+    updata code
+
+commit 447ad7244ea35c614a6e31dd482e042fa265017f
+Author: nnstrings <nnstrings99@gmail.com>
+Date:   Fri May 17 15:55:17 2024 +0800
+
+    updata
+
+commit 5911bbf975bc483152e250197ffa23186a058773
+Author: nnstrings <nnstrings99@gmail.com>
+Date:   Thu May 16 11:30:44 2024 +0800
+
+    updata main.cpp
+
+commit e4f8b28dc5a49d3a69b50c08a40b2a5e628b34de
+Author: nnstrings <nnstrings99@gmail.com>
+Date:   Thu May 16 11:20:23 2024 +0800
+
+    updata code
+
+commit c6d3b8a58b3e779e22ec824f2d48a126d5570774
+Merge: 0fa367f 50212d7
+Author: NNStrings <97866513+NNStrings@users.noreply.github.com>
+Date:   Thu May 16 11:04:10 2024 +0800
+
+    Merge pull request #4 from NNStrings/bigshark
+    
+    Bigshark
+
+commit 50212d7931d53f1b11d56aa38ce643783a2b35fc
+Merge: 0fa367f bc57798
+Author: NNStrings <97866513+NNStrings@users.noreply.github.com>
+Date:   Thu May 16 11:03:00 2024 +0800
+
+    Merge pull request #3 from bigsharkym/jyy
+    
+    updata main.cpp
+
+commit bc5779874f58fd4d7f946b988b225d3d444eb9e0
+Author: bigshark <3366416284@qq.com>
+Date:   Thu May 16 10:41:17 2024 +0800
+
+    updata main.cpp
+
+commit 0fa367f2bea848a9ccf2b19981514894ff9cf8aa
+Author: nnstrings <nnstrings99@gmail.com>
+Date:   Wed May 15 18:38:52 2024 +0800
+
+    updata README
+
+commit dfb9dc57e7bc0c7264b98c12cfba6ef3ea9cc366
+Author: nnstrings <nnstrings99@gmail.com>
+Date:   Wed May 15 18:21:01 2024 +0800
+
+    commit test_main.cpp
+
+commit 09dd5f1a04bc4aa06b8415fcc75f5c4f5560ab3b
+Author: nnstrings <nnstrings99@gmail.com>
+Date:   Wed May 15 18:20:41 2024 +0800
+
+    updata main.cpp
+
+commit 932265764ad40bba347c44e457529a90647d79a2
+Author: nnstrings <nnstrings99@gmail.com>
+Date:   Wed May 15 18:20:21 2024 +0800
+
+    updata Makefile
+
+commit c5142451dae9958cf2a18d6d960a6c9dcc26e8e9
+Author: nnstrings <nnstrings99@gmail.com>
+Date:   Wed May 15 18:20:03 2024 +0800
+
+    test file
+
+commit 566528d2ac23940d0c9c1e7f2fa390c38020a20e
+Author: nnstrings <nnstrings99@gmail.com>
+Date:   Wed May 15 18:19:26 2024 +0800
+
+    updata .gitignore
+
+commit e818ff99c24640328e7de74d3b2d0859d5af4fe7
+Author: nnstrings <nnstrings99@gmail.com>
+Date:   Wed May 15 00:17:50 2024 +0800
+
+    updata code
+
+commit c9660b01b01dbdc544839c05f8a25cc2a4e0f702
+Author: nnstrings <nnstrings99@gmail.com>
+Date:   Wed May 15 00:17:43 2024 +0800
+
+    updata .gitignore
+
+commit 5c0a39082a145b48df7e77f6402136939035308d
+Author: nnstrings <nnstrings99@gmail.com>
+Date:   Tue May 14 23:40:57 2024 +0800
+
+    updata code
+
+commit b137b6f5ce7c2813076b633584eb1305a424314c
+Author: nnstrings <nnstrings99@gmail.com>
+Date:   Tue May 14 23:40:46 2024 +0800
+
+    updata .gitignore
+
+commit 9c67025ee8798c7ce1b0e0e29c455563e36778f9
+Author: nnstrings <nnstrings99@gmail.com>
+Date:   Tue May 14 22:12:19 2024 +0800
+
+    updata code
+
+commit e2ef816de8958d131b154b142b5576b8bf09bce5
+Author: nnstrings <nnstrings99@gmail.com>
+Date:   Tue May 14 22:12:11 2024 +0800
+
+    add Makefile
+
+commit 143705787b6f77917a96a7a6a7781806afdf7f57
+Author: nnstrings <nnstrings99@gmail.com>
+Date:   Tue May 14 22:11:55 2024 +0800
+
+    updata .gitignore
+
+commit 0202afedecb4f014ff7d7712dd864dfd74b8d1e1
+Merge: 6585666 0f07e02
+Author: NNStrings <97866513+NNStrings@users.noreply.github.com>
+Date:   Tue May 14 20:47:09 2024 +0800
+
+    Merge pull request #1 from bigsharkym/main
+    
+    updata1
+
+commit 0f07e02fa2f06562fdbb2c0259f6f94ea3c752ea
+Author: bigshark <3366416284@qq.com>
+Date:   Tue May 14 20:41:39 2024 +0800
+
+    commit code
+
+commit bff4657966dcc7ceb9efed7b63f3603e23078372
+Author: bigshark <3366416284@qq.com>
+Date:   Tue May 14 20:41:00 2024 +0800
+
+    add .gitignore
+
+commit 65856662ee9791fd5c17ff4857679a26d62b90fb
+Author: nnstrings <550896291@qq.com>
+Date:   Tue May 14 15:54:31 2024 +0800
+
+    updata graph.h
+
+commit 7cdd4ccad243ad3ebf727111726afb40c2e648d6
+Author: NNStrings <97866513+NNStrings@users.noreply.github.com>
+Date:   Tue May 14 15:49:52 2024 +0800
+
+    Initial commit
