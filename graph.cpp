@@ -25,7 +25,7 @@ void Graph::textPreprocess(std::string& str) {
     }
 }
 
-Graph::Graph(const std::string& p) : path(p) {
+Graph::Graph(const std::string& p) : v(0), e(0), path(p) {
     memset(Vex, 0, sizeof(Vex));
     memset(Edge, 0, sizeof(Edge));
     std::ifstream file(path);
