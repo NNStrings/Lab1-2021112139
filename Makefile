@@ -1,8 +1,9 @@
 CXX = g++
-CXXFLAGS = -Wall -Wextra -std=c++17
+CXXFLAGS = -Wall -Wextra -std=c++17 -fprofile-arcs -ftest-coverage
 SRC_DIR = .
 TEST_DIR = test
 BUILD_DIR = build
+RESULT_DIR = results
 INC_DIR = -I$(SRC_DIR) -I$(TEST_DIR)/include
 LIB_DIR = -L$(TEST_DIR)/lib
 LIBS = -lgtest -pthread
@@ -15,7 +16,7 @@ OBJS = $(patsubst $(SRC_DIR)/%.cpp,$(BUILD_DIR)/%.o,$(SRCS))
 TEST_SRCS = $(wildcard $(TEST_DIR)/*.cpp)
 TEST_OBJS = $(patsubst $(TEST_DIR)/%.cpp,$(BUILD_DIR)/%.o,$(TEST_SRCS))
 
-.PHONY: all clean test exe
+.PHONY: all clean test exe coverage html
 
 all: $(BUILD_DIR)/$(TARGET) $(BUILD_DIR)/$(TEST_TARGET)
 
@@ -40,8 +41,17 @@ test:
 	@./$(BUILD_DIR)/$(TEST_TARGET)
 
 exe:
-	./build/main ./test.txt
+	./build/main ./test.txt < script.txt
+
+coverage: $(BUILD_DIR)/$(TEST_TARGET)
+	@./$(BUILD_DIR)/$(TEST_TARGET)
+	@gcov -o $(BUILD_DIR) $(SRCS) $(TEST_SRCS)
+
+html:
+	@lcov --directory . --capture --output-file app.info
+	@genhtml -o results app.info
 
 clean:
 	@rm -rf $(BUILD_DIR)
-
+	@rm -rf $(RESULT_DIR)
+	@rm -f *.gcno *.gcda *.gcov *.info *png *jpg
