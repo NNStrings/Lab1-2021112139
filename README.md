@@ -64,7 +64,7 @@ exit
 pip install cpplint
 ```
 
-<div><a herf="https://github.com/google/styleguide/blob/gh-pages/cpplint/cpplint.py">文件下载链接</a></div></br>
+<div><a href="https://github.com/google/styleguide/blob/gh-pages/cpplint/cpplint.py">文件下载链接</a></div></br>
 
 使用：
 
