@@ -106,3 +106,28 @@ cp build/lib your_project_folder/test/lib
 ```
 
 ### 代码覆盖率工具 ———— gcov 和 lcov
+
+安装：
+
+```bash
+sudo apt install lcov
+```
+
+运行：
+
+```bash
+gcov -o build . test
+lcov --directory . --capture --output-file app.info
+genhtml -o results app.info
+```
+
+## 运行
+
+```bash
+make clean          # 清除编译产生的所有文件
+make                # 编译程序
+make exe            # 运行主程序
+make test           # 运行测试文件
+make coverage       # 计算代码覆盖率
+make html           # 可视化代码覆盖率
+```
