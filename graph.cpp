@@ -81,10 +81,10 @@ std::string Graph::FindBridgeWords(int id1, int id2) const {
         } else {
             if (!flag1) {
                 flag1 = 1;
-                last = Vex[i];
             } else {
                 res = res + ", " + last;
             }
+            last = Vex[i];
         }
     }
     if (!flag)
