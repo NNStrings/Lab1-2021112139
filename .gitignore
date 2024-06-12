@@ -19,6 +19,14 @@ lib
 test_main
 main
 
+############ intermediate file ############
+
+results
+*.info
+*.gcov
+*.gcda
+*.gcno
+
 ############ else ############
 
 *.png

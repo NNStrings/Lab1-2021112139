@@ -3,8 +3,8 @@
 
 TEST(GraphTest, ExampleTest) {
     Graph G("./test.txt");
-    EXPECT_EQ(G.get_v(), 10);
-    EXPECT_EQ(G.get_e(), 12);
+    EXPECT_EQ(G.get_v(), 17);
+    EXPECT_EQ(G.get_e(), 23);
     std::string s = queryBridgeWords(G,"seek","to");
     EXPECT_EQ(s, "No bridge words from \"seek\" to \"to\"!");
     s = queryBridgeWords(G,"to","explore");
