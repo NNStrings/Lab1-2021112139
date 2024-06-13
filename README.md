@@ -77,7 +77,7 @@ sudo apt install cppcheck
 使用：
 
 ```bash
-cppcheck --enable=all --suppress=missingInclude --suppress=unusedFunction Lab1-2021112139/
+cppcheck --enable=all --suppress=missingInclude --suppress=unusedFunction Lab3-2021112139/
 ```
 
 ### 单元测试工具 ———— google test
