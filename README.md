@@ -63,7 +63,7 @@ pip install cpplint
 使用：
 
 ```bash
-python2 cpplint.py *.cpp
+python2 cpplint.py --filter=-build/include *.cpp
 ```
 
 ### 代码静态检查工具 ———— cppcheck

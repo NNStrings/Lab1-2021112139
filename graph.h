@@ -1,6 +1,6 @@
 // Copyright 2024 <2021111230,2021112139>
-#ifndef __GRAPH_H_
-#define __GRAPH_H_
+#ifndef GRAPH_H_
+#define GRAPH_H_
 
 #include <bits/stdc++.h>
 #include <map>
@@ -31,10 +31,10 @@ extern std::string queryBridgeWords(const Graph&,
                                     const std::string&,
                                     const std::string&);
 extern std::string generateNewText(const Graph&, const std::string&);
-extern std::string calcShortestPath(const Graph&, 
-                                    const std::string&, 
+extern std::string calcShortestPath(const Graph&,
+                                    const std::string&,
                                     const std::string&);
 extern std::string calcShortestPath(const Graph&, const std::string&);
 extern std::string randomWalk(const Graph&);
 
-#endif // __GRAPH_H_
+#endif  // GRAPH_H_
